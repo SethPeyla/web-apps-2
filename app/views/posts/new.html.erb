@@ -1,1 +1,16 @@
 <h1>New Post</h1>
+
+<%= form_with :model => @company do |form| %>
+  <p>
+    <%= form.label "author" %>
+    <%= form.text_field "body" %>
+    <%= form. "body" %>
+  </p>
+  <p>
+    <%= form.label "city" %>
+    <%= form.text_field "city" %>
+    <%= form.label "state" %>
+    <%= form.text_field "state" %>
+  </p>
+  <%= form.submit %>
+<% end %>
